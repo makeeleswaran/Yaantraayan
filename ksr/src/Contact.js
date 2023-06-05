@@ -15,7 +15,7 @@ import Card from 'react-bootstrap/Card';
 
 function Contact() {
   return (
-    <div style={{backgroundColor:"#013",width:"100%"}}>
+    <div style={{backgroundColor:"#013",width:"100%"}} id='Contact'>
 
 <div style={{textAlign:"center",marginTop:"0px"}}>
 

@@ -9,14 +9,16 @@ import brow5 from '../src/assets/browsher-1-06.jpg'
 import brow6 from '../src/assets/browsher-1-07.jpg'
 import brow7 from '../src/assets/browsher-1-08.jpg'
 import brow8 from '../src/assets/browsher-1-09.jpg'
+
 function Trans() {
+  
   return (
     <div>
 <h1 style={{textAlign:"center",marginTop:"30px"}}>Browsher</h1>
-  <Marquee pauseOnHover flexDirection-right speed={80} style={{marginTop:"30px"}}>
+  <Marquee pauseOnHover flexDirection-left  speed={80} style={{marginTop:"30px"}}>
 
   <div className='scrool' style={{padding:"10px"}}>
-
+  
     <img src={brow}/>
     <img src={brow1}/>
     <img src={brow2}/>
@@ -36,8 +38,6 @@ function Trans() {
     <img src={brow7}/>
     <img src={brow8}/>
    
-    
-  
   </div>
   </Marquee>
     </div>

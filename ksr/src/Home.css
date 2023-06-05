@@ -1,33 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@700;500;900&display=swap');
-.heading h1{font-size:40px;font-family: "poppins"; color:white;}
-.heading a button {border:none;padding:10px 30px;background-color:#d9abff;color: black;border-radius: 10px;color: white;}
-.heading a button:hover {background-color:white;color: black;}
-.heading p{font-size: 20px;font-family: "roboto";font-weight:500; color: white;}
-.body{
-     /* Hide vertical scrollbar */
-  overflow-x: hidden; 
-  overflow-y: hidden; 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@700;500;900&display=swap");
+.heading h1 {
+  font-size: 40px;
+  font-family: "poppins";
+  color: white;
+}
+.heading a button {
+  border: none;
+  padding: 10px 30px;
+  background-color: #d9abff;
+  color: black;
+  border-radius: 10px;
+  color: white;
+}
+.heading a button:hover {
+  background-color: white;
+  color: black;
+}
+.heading p {
+  font-size: 20px;
+  font-family: "roboto";
+  font-weight: 500;
+  color: white;
+}
+.body {
+  /* Hide vertical scrollbar */
+  overflow-x: hidden;
+  overflow-y: hidden;
   box-sizing: border-box;
-width: 100%;
-height: 100vh;
-background-image:url("./assets/80sbg.png");
-background-position: center;
-background-repeat: no-repeat;
-background-size:cover;
-
-    /* padding: 100px; */
-    /* padding-bottom: 100px; */
-
-    
+  width: 100%;
+  height: 100vh;
+  padding-bottom: "100px";
+  background-image: url("./assets/80sbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 100px; */
+  /* padding-bottom: 100px; */
 }
-.maincontent
-{
-    justify-content: center;
-    align-content: center;
+.maincontent {
+  justify-content: center;
+  align-content: center;
 }
-.default
-{
-    margin-left: 300px;
+.default {
+  margin-left: 300px;
 }
 /* form a button
 {
@@ -46,51 +61,50 @@ form a button:hover
     color:black;
     background-color: white;
 } */
-@media screen and (min-width:320px) and (max-width:480px) {
-    .heading p
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* .body
     {
-        font-size: 20px;
-        
-    }
-    .heading h1{
-        text-align: center;
-        font-size: 40px;
-    }
-}
-@media screen and  (min-width:766px) {
-    .heading h1{
-        text-align: start;
-        font-size: 40px;
-    }
-    .heading{
-        margin-top: 100px;
-    }
-}
-@media screen and  (min-width:320px) {
-
-    .heading{
-        margin-top: 0px;
-        margin-bottom: 100px;
-    }
-    /* .btn{
-        margin-bottom: 100px;
+        padding-bottom: 100px;
+        height: 50%;
     } */
+  .heading p {
+    font-size: 20px;
+  }
+  .heading h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 766px) {
+  .heading h1 {
+    text-align: start;
+    font-size: 40px;
+  }
+  .heading {
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .heading {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 343px) {
+  .body {
+    height: 100%;
+  }
 }
 
-
-
-
-@media screen and (min-width:1024px) 
-{
-.heading{
+@media screen and (min-width: 1024px) {
+  .heading {
     margin-top: 120px;
-}
-.heading h1{
+  }
+  .heading h1 {
     font-size: 60px;
     font-family: "poppins";
-}
+  }
 
-/* .btn1 a button
+  /* .btn1 a button
 {
     margin-left: 220px;
     margin-top: 200px;
@@ -100,42 +114,51 @@ form a button:hover
     margin-left: 200px;
     
 } */
-.heading p{
-    font-size:20px;
+  .heading p {
+    font-size: 20px;
     line-height: 40px;
-}
-
+  }
 }
 .App-header {
-    /* background-color: #282c34; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* font-size: calc(10px + 2vmin); */
-    color: white;
-  }
+  /* background-color: #282c34; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
+}
+.whatsapp-icon {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+}
 
-  /* @media (prefers-reduced-motion: no-preference) {
+.whatsapp-icon:hover {
+  background-color: darkgreen;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
     .App-logo {
       animation: App-logo-spin infinite 20s linear;
     }
   } */
-  
-/* @media screen and (min-width:320px)
-{
-    ColorButton .btn
-    {
-        padding:"10px 10px"; 
-    }
-} */
-@media screen and (min-width:768px) 
-{
-    .heading{
-        margin-top: 90px;
-    }
-    .heading h1{
-        font-size: 60px;
-        font-family: "poppins";
-    }
+
+@media screen and (min-width: 320px) {
+  ColorButton .btn {
+    padding: "10px 10px";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    margin-top: 90px;
+  }
+  .heading h1 {
+    font-size: 60px;
+    font-family: "poppins";
+  }
 }

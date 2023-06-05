@@ -32,7 +32,7 @@ const Item = styled(Paper)(({ theme }) => ({
 function Event() {
 
   return (
-    <div>
+    <div id='Event' >
      
       <div>
         
@@ -42,7 +42,7 @@ function Event() {
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={12}md={6}lg={6}sm={12}xl={6}>
           <Item style={{background:"none",boxShadow:"none",outline:"none",border:"none"}} data-aos="flip-left"  data-aos-duration="1200">
-         <Box sx={{marginTop:{xs:"30px",md:"50px",lg:"70px"},Width:{xs:"50px"},width:{xs:"270px",sm:"400px",md:"400px",lg:"508px"},height:{xs:"280px",md:"300px",lg:"578px"}}}>
+         <Box sx={{marginTop:{xs:"30px",sm:"50px",md:"50px",lg:"70px"},Width:{xs:"50px"},width:{xs:"270px",sm:"400px",md:"400px",lg:"508px"},height:{xs:"280px",md:"300px",lg:"578px"}}}>
             <img src={logo} style={{objectFit:"cover",width:"100%",height:"100%"}}/>
             </Box>
             </Item>
@@ -50,9 +50,9 @@ function Event() {
 
         <Grid item xs={12}md={6}lg={6}>
           <Box sx={{marginTop:{xs:"0px",md:"50px",lg:"200px"}}} data-aos="fade-up"   data-aos-duration="1000">
-          <div style={{color:"white",fontSize:"px",fontFamily:"serif"}} >
+          <div style={{color:"white",fontSize:"px",fontFamily:"serif",textAlign:"justify"}} >
           <Box sx={{fontSize:{xs:"40px",md:"70px",lg:"90px"}}}>Quiz</Box></div>
-            <p style={{color:"white",fontSize:"25px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p style={{color:"white",fontSize:"25px",textAlign:"justify"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit.
 explicabo quisquam culpa labore deserunt veniam
 repellat, iure repellendus soluta.</p>
 ``

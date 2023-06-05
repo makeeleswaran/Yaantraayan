@@ -1,22 +1,22 @@
-.header
-{
-background-color:rgb(48,44,63);
-   height:100px;
-   width: 100%;
-   box-shadow: 5px 5px 20px;
-  
-  
+.header1 {
+  background-color: rgb(48, 44, 63);
+  height: 100px;
+  width: 100%;
+  box-shadow: 5px 5px 20px;
 }
 .headertext {
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-    /* margin-left: 30px; */
-    font-size: 22px;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  /* margin-left: 30px; */
+  font-size: 22px;
 }
-.navbar-toggler
-{
-    background-color: white !important;
-    font-size: 15px !important;
+.navbar-toggler {
+  background-color: white !important;
+  font-size: 15px !important;
 }
-
+@media (max-width: 768px) {
+  .headertext {
+    font-size: 16px;
+  }
+}

@@ -10,9 +10,9 @@ function Navba() {
   return (
     <div>
       {['sm'].map((expand) => (
-        <Navbar key={expand}  expand={expand} className="mb- 3 header">
+        <Navbar key={expand}  expand={expand} className="mb- 3 header1">
           <Container >
-            <Navbar.Brand href="/Browsher"><img src={yan} style={{width:"100px",height:"50px"}}/></Navbar.Brand>
+            <Navbar.Brand href="/Browsher"><img src={yan} style={{width:"180px",height:"90px"}}/></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

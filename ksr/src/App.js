@@ -10,17 +10,20 @@ import NonEvent from './NonEvent';
 import Event from "./Event"
 import Browsher from './Browsher'
 import Front from './Front'
+import Error from './Error'
 import './App.css'
+import Register from './Register';
 
-import { useEffect, useMemo, useState } from "react";
+
+// import { useEffect, useMemo, useState } from "react";
 
 function App() {
-  
+
   return (
-    <div>
+    <div style={{overflow:"hidden"}}>
       <Navba/>
       <Routes>
-      <Route path="/Front" element={<Front/>}></Route>
+      {/* <Route path="/Front" element={<Front/>}></Route> */}
         <Route path="/" element={<Home/>}></Route>
         <Route path="/Home" element={<Home/>}></Route>
         <Route path="/About" element={<About/>}></Route>
@@ -28,8 +31,9 @@ function App() {
         <Route path="/Event" element={<Event/>}></Route>
         <Route path="/NonEvent" element={<NonEvent/>}></Route>
         <Route path="/Browsher" element={<Browsher/>}></Route>
-      </Routes>
-      
+        <Route path="*" element={<Error/>}></Route>
+        <Route path='/Registration' element={<Register/>}></Route>
+      </Routes>              
     </div>
   )
 }

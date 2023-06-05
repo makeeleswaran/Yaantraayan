@@ -9,7 +9,22 @@ import Stack from '@mui/material/Stack';
 import { purple } from '@mui/material/colors';
 import Container  from 'react-bootstrap/esm/Container';
 import About from './About'
-// import yan from '../src/assets/yan.png'
+import Contact from './Contact'
+import Event from './Event'
+import NonEvent from './NonEvent'
+import Corosel from './Corosel'
+// import Register from './Register'
+import Trans from './Trans'
+import Poster from "./assets/poster.jpg" 
+import Footer from './Footer'
+import Register from './Register';
+// import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+// import  WhatsApp  from './assets/';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+// import '@fortawesome/fontawesome-free/css/all.min.css'
+// // import yan from '../src/assets/yan.png'
 // // import { styled } from '@mui/material/styles';
 // import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
@@ -24,6 +39,8 @@ import { Link } from 'react-router-dom';
 // // import Col from 'react-bootstrap/Col';
 // import Corosel from './Corosel'
 import "./Home.css"
+// import Browsher from './Browsher';
+// import { WhatsApp } from '@mui/icons-material';
 // import Event from "./Event"
 
 // import Trans from './Trans'
@@ -38,6 +55,7 @@ const ColorButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -46,17 +64,18 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,         
 }));
 
-function Home(){
+function Home()
+{
   
   return (
-    <div>
-    <div className='body'  data-aos="fade-up"   data-aos-duration="1000">
+    <div id="Home" >
+    <div className='body' >
       
-      <Container>
-    <div  className='heading'>
+      <Container style={{height:"100%"}}>
+    <div  className='heading'  data-aos="fade-up"   data-aos-duration="1000">
          <Box sx={{ flexGrow: 1 }}  >
       <Grid container spacing={2}>
-        <Grid item xs={12} lg={6} sm={12} xl={6} style={{backgroundColor:"none"}}>
+        <Grid item xs={12} lg={6} sm={12} xl={6} md={6} style={{backgroundColor:"none"}}>
           {/* <Item > */}
 
 <h1 className='maincontent' >K.S.R COLLEGE OF ENGINEERING</h1>
@@ -65,20 +84,20 @@ explicabo quisquam culpa labore deserunt veniam
 repellat, iure repellendus soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
 explicabo quisquam culpa labore deserunt veniam
 repellat, iure repellendus soluta.</p>
-<ColorButton variant="contained">Visit</ColorButton><br/>
+<ColorButton href="https://ksrce.ac.in/" variant="contained">Visit</ColorButton><br/>
 
           {/* </Item> */}
         </Grid>
 
         <Grid  item xs={12} lg={6} sm={12} xl={6} style={{display:'flex',width:'100%',justifyContent:'center',alignItems:'center',flexDirection:"column"}}>
          
-          <Stack spacing={2} style={{marginBottom:"150px"}}>
+          <Stack spacing={2} style={{}}>
        
    
    
-      <ColorButton variant="contained" style={{padding:"15px 20px",fontSize:"16px"}}><Link to='/Event' style={{textDecoration:"none",color:"white"}}>Technical Events</Link></ColorButton>
+      <ColorButton variant="contained" style={{padding:"15px 20px",marginBottom:"20px",fontSize:"16px"}}><Link to='/Event' style={{textDecoration:"none",color:"white"}}>Technical Events</Link></ColorButton>
 
-      <ColorButton variant="contained"  style={{padding:"15px 20px",fontSize:"16px"}}><Link to='/NonEvent' style={{textDecoration:"none",color:"white"}}>Non Technical Events</Link></ColorButton>
+      <ColorButton variant="contained"  style={{padding:"15px 20px",fontSize:"16px",marginBottom:"20px"}}><Link to='/NonEvent' style={{textDecoration:"none",color:"white"}}>Non Technical Events</Link></ColorButton>
     
     </Stack>
           
@@ -86,10 +105,34 @@ repellat, iure repellendus soluta.</p>
       </Grid>
     </Box>
     </div>
-   
+    {/* <a href="https://wa.me/1234567890" className="whatsapp-icon">
+  <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+</a> */}
+    
     </Container>
+    {/* <div style="width:60px; height: 60px;position: fixed; right:10px;bottom
+
+:10px;">
+
+<a href="https://wa.me/916369156106"><img src={WhatsApp} style="width:60px; height: 60px;" /></a>
+
+</div> */}
+{/* <img src="{Poster}" style={{width:"100px",height:"100px"}}/> */}
+
     </div>
+    
+    {/* <Register/> */}
+    {/* <Trans/> */}
+  
+    <Corosel/>
     <About/>
+    <Event/>
+    <NonEvent/>
+    <Contact/>
+    <Register/>
+    {/* <Browsher/> */}
+    <Footer/>
+    
     </div>
     
   )
